@@ -1,9 +1,3 @@
-//
-//  ViewController.swift
-//  DiceeApp
-//
-//  Created by Балжан Бозбашава on 04.10.2024.
-//
 
 import UIKit
 
