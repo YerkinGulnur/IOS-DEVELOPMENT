@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  EggTimer
 //
-//   Created by Гулнур  on 22.10.2024.
+//   Created by Гулнур  on 20.10.2024.
 //
 
 import UIKit
