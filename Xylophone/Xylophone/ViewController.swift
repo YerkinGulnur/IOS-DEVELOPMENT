@@ -8,42 +8,46 @@
 import UIKit
 import AVFoundation
 
-class ViewController: UIViewController, AVAudioPlayerDelegate {
-    
-    var audio: AVAudioPlayer!
-    var soundArray = ["A", "B", "C", "D", "E", "F", "G"]
+class ViewController: UIViewController {
+    var audioPlayer: AVAudioPlayer?
+    func playSound(note: String) {
+        if let url = Bundle.main.url(forResource: note, withExtension: "wav") {
+            do {
+                audioPlayer?.stop()
+                audioPlayer = try AVAudioPlayer(contentsOf: url)
+                audioPlayer?.play()
+            } catch {
+                print("Error playing sound.")
+            }
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
-    @IBAction func keyPressed(_ sender: UIButton) {
-        let selectedSound = soundArray[(sender.tag) - 1]
-        playSound(choosedSound: selectedSound)
-        
-        
-        UIView.animate(withDuration: 0.1, animations: {
-            sender.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
-            sender.alpha = 0.7
-        }) { _ in
-            UIView.animate(withDuration: 0.1) {
-                sender.transform = CGAffineTransform.identity
-                sender.alpha = 1.0
-            }
-        }
+    @IBAction func noteCPressed(_ sender: UIButton) {
+        playSound(note: "A")
     }
-    
-    func playSound(choosedSound: String) {
-        if let soundUrl = Bundle.main.url(forResource: choosedSound, withExtension: ".wav") {
-            do {
-                audio = try AVAudioPlayer(contentsOf: soundUrl)
-                audio.prepareToPlay()
-                audio.play()
-            } catch {
-                print(error)
-            }
-        } else {
-            print(choosedSound)
-        }
+
+    @IBAction func noteDPressed(_ sender: UIButton) {
+        playSound(note: "B")
     }
-}
+    @IBAction func noteEPressed(_ sender: UIButton) {
+        playSound(note: "C")
+    }
+
+    @IBAction func noteFPressed(_ sender: UIButton) {
+        playSound(note: "D")
+    }
+    @IBAction func noteGPressed(_ sender: UIButton) {
+        playSound(note: "E")
+    }
+
+    @IBAction func noteAPressed(_ sender: UIButton) {
+        playSound(note: "F")
+    }
+    @IBAction func noteBPressed(_ sender: UIButton) {
+        playSound(note: "G")
+    }
+
+    }
