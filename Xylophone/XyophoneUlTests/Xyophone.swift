@@ -1,6 +1,6 @@
 //
-//  Xylophone.swift
-//  XylophoneTests
+//  XylophoneUITests.swift
+//  XylophoneUITests
 //
 //  Created by Гулнур  on 18.10.2024.
 //
