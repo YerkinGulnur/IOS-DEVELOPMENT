@@ -41,7 +41,7 @@ A **native iOS weather app**, providing **current weather** and **6 days forecas
 
 Preview 1                  | Preview 2                 | Preview 3                 | Preview 4                  
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-| ![](https://github.com/kishanbarmawala/Weather-App/blob/main/Preview/demo-1.png) | ![](https://github.com/kishanbarmawala/Weather-App/blob/main/Preview/demo-2.png) | ![](https://github.com/kishanbarmawala/Weather-App/blob/main/Preview/demo-3.png) | ![](https://github.com/kishanbarmawala/Weather-App/blob/main/Preview/demo-4.gif) |
+| ![](https://github.com/Weather-App/blob/main/Preview/demo-1.png) | ![](https://github.com/Weather-App/blob/main/Preview/demo-2.png) | ![](https://github.com/Weather-App/blob/main/Preview/demo-3.png) | ![](https://github.com/Weather-App/blob/main/Preview/demo-4.gif) |
 
 ---
 
@@ -100,21 +100,7 @@ The app follows the **MVVM (Model-View-ViewModel)** architecture, ensuring:
 - **Invalid City Name**  
   Displays a **"City not found"** message when the input city is unrecognized.
 
----
 
-## 📝 License
 
-This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
-
----
-
-## 📧 Contact
-
-For any questions, feedback, or suggestions, please reach out to me at:
-
-- Email: [kishanbarmawala7@gmail.com](mailto:kishanbarmawala7@gmail.com)
-- LinkedIn: [Kishan Barmawala](https://www.linkedin.com/in/kishan-barmawala/)
-
-Your thoughts are greatly appreciated!
 
 ---
